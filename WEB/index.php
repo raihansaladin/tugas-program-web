@@ -71,7 +71,6 @@ include "call.php"
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-lg-10 hero-content" data-aos="fade-up" data-aos-delay="100">
               <h1>Website Desa Bungi</h1>
-              <h2>Website Desa Bungi</h2>
             </div>
           </div>
         </div>
@@ -271,7 +270,7 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="profiles/p4.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Kahar Munajat</h5>
@@ -284,11 +283,11 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="profiles/p5.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Albyansyah Porosi</h5>
-                  <span>UX Designer</span>
+                  <span>E1E124071</span>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->
@@ -297,11 +296,11 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="profiles/p1.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Muh. Dirga</h5>
-                  <span>UX Designer</span>
+                  <span>E1E124007</span>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->
@@ -310,11 +309,11 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="profiles/p3.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Muh. Raihan Saladin</h5>
-                  <span>UX Designer</span>
+                  <span>E1E1240</span>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->
@@ -323,11 +322,11 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                  <img src="profiles/p2.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Gilang syah fitra R</h5>
-                  <span>UX Designer</span>
+                  <span>E1E1240</span>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->

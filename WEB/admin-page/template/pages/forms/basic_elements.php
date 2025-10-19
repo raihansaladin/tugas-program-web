@@ -503,62 +503,62 @@ if (isset($_GET['delete_petani'])) {
             </div>
 
             <!-- Form untuk CRUD Admin -->
-            <div class="row">
-              <div class="col-md-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <?php 
-                      if (isset($_GET['edit_admin'])) {
-                          echo "Edit Data Admin";
-                      } else {
-                          echo "Tambah Data Admin";
-                      }
-                      ?>
-                    </h4>
-                    <p class="card-description"> Form data Admin</p>
-                    <form class="forms-sample" method="POST" action="">
-                      <?php
-                      // Jika mode edit admin, ambil data yang akan diedit
-                      if (isset($_GET['edit_admin'])) {
-                          $id_edit = $_GET['edit_admin'];
-                          $data_edit = mysqli_query($con, "SELECT * FROM admin WHERE id='$id_edit'");
-                          $row_edit = mysqli_fetch_array($data_edit);
-                          
-                          echo "<input type='hidden' name='id' value='$row_edit[id]'>";
-                      }
-                      ?>
-                      
-                      <div class="form-group">
-                        <label for="username">Username</label>
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username"
-                               value="<?php echo isset($row_edit) ? $row_edit['username'] : ''; ?>" required>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="email_admin">Email address</label>
-                        <input type="email" class="form-control" id="email_admin" name="email_admin" placeholder="Email"
-                               value="<?php echo isset($row_edit) ? $row_edit['email'] : ''; ?>" required>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
-                               value="">
-                        <small class="text-muted"><?php echo isset($row_edit) ? "Kosongkan jika tidak ingin mengubah password" : ""; ?></small>
-                      </div>
-                      
-                      <?php if (isset($_GET['edit_admin'])): ?>
-                        <button type="submit" name="edit_admin" class="btn btn-primary mr-2">Update</button>
-                        <a href="basic_elements.php" class="btn btn-dark">Cancel</a>
-                      <?php else: ?>
-                        <button type="submit" name="add_admin" class="btn btn-primary mr-2">Submit</button>
-                        <button type="reset" class="btn btn-dark">Cancel</button>
-                      <?php endif; ?>
-                    </form>
-                  </div>
-                </div>
-              </div>
+<div class="row">
+  <div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          <?php 
+          if (isset($_GET['edit_admin'])) {
+              echo "Edit Data Admin";
+          } else {
+              echo "Tambah Data Admin";
+          }
+          ?>
+        </h4>
+        <p class="card-description"> Form data Admin</p>
+        <form class="forms-sample" method="POST" action="">
+          <?php
+          // Jika mode edit admin, ambil data yang akan diedit
+          if (isset($_GET['edit_admin'])) {
+              $id_edit_admin = $_GET['edit_admin'];
+              $data_edit_admin = mysqli_query($con, "SELECT * FROM admin WHERE id='$id_edit_admin'");
+              $row_edit_admin = mysqli_fetch_array($data_edit_admin);
+              
+              echo "<input type='hidden' name='id' value='$row_edit_admin[id]'>";
+          }
+          ?>
+          
+          <div class="form-group">
+            <label for="username_admin">Username</label>
+            <input type="text" class="form-control" id="username_admin" name="username" placeholder="Username"
+                   value="<?php echo isset($row_edit_admin) ? $row_edit_admin['username'] : ''; ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email_admin">Email address</label>
+            <input type="email" class="form-control" id="email_admin" name="email_admin" placeholder="Email"
+                   value="<?php echo isset($row_edit_admin) ? $row_edit_admin['email'] : ''; ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password_admin">Password</label>
+            <input type="password" class="form-control" id="password_admin" name="password" placeholder="Password"
+                   value="">
+            <small class="text-muted"><?php echo isset($row_edit_admin) ? "Kosongkan jika tidak ingin mengubah password" : ""; ?></small>
+          </div>
+          
+          <?php if (isset($_GET['edit_admin'])): ?>
+            <button type="submit" name="edit_admin" class="btn btn-primary mr-2">Update</button>
+            <a href="basic_elements.php" class="btn btn-dark">Cancel</a>
+          <?php else: ?>
+            <button type="submit" name="add_admin" class="btn btn-primary mr-2">Submit</button>
+            <button type="reset" class="btn btn-dark">Cancel</button>
+          <?php endif; ?>
+        </form>
+      </div>
+    </div>
+  </div>  
 
               <!-- Tabel Data Admin -->
               <div class="col-md-6 grid-margin stretch-card">
@@ -601,71 +601,73 @@ if (isset($_GET['delete_petani'])) {
             </div>
 
             <!-- Form untuk CRUD petani -->
-            <div class="row">
-              <div class="col-md-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <?php 
-                      if (isset($_GET['edit_petani'])) {
-                          echo "Edit Data Petani";
-                      } else {
-                          echo "Tambah Data Petani";
-                      }
-                      ?>
-                    </h4>
-                    <p class="card-description"> Form data Petani Desa </p>
-                    <form class="forms-sample" method="POST" action="">
-                      <?php
-                      // Jika mode edit petani, ambil data yang akan diedit
-                      if (isset($_GET['edit_petani'])) {
-                          $id_edit = $_GET['edit_petani'];
-                          $data_edit = mysqli_query($con, "SELECT * FROM petani WHERE IDPetani='$id_edit'");
-                          $row_edit = mysqli_fetch_array($data_edit);
-                          
-                          echo "<input type='hidden' name='id_petani' value='$row_edit[IDPetani]'>";
-                      }
-                      ?>
-                      
-                      <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap"
-                               value="<?php echo isset($row_edit) ? $row_edit['nama'] : ''; ?>" required>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="bentangan">Bentangan</label>
-                        <input type="bentangan" class="form-control" id="bentangan" name="bentangan" placeholder="Bentangan"
-                               value="<?php echo isset($row_edit) ? $row_edit['bentangan'] : ''; ?>" required>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="produksi_mt">Produksi_mt</label>
-                        <input type="text" class="form-control" id="produksi_mt" name="produksi_mt" placeholder="produksi_mt"
-                               value="<?php echo isset($row_edit) ? $row_edit['produksi_mt'] : ''; ?>">
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="mt">mt</label>
-                        <textarea class="form-control" id="mt" name="mt" rows="2" placeholder="mt" required><?php echo isset($row_edit) ? $row_edit['mt'] : ''; ?></textarea>
-                      </div>
-                      
-                      <div class="form-group">
-                        <label for="produksi_thn">Produksi_thn</label>
-                        <textarea class="form-control" id="produksi_thn" name="produksi_thn" rows="4" placeholder="Produksi_thn" required><?php echo isset($row_edit) ? $row_edit['produksi_thn'] : ''; ?></textarea>
-                      </div>
-                      
-                      <?php if (isset($_GET['edit_petani'])): ?>
-                        <button type="submit" name="edit_petani" class="btn btn-primary mr-2">Update</button>
-                        <a href="basic_elements.php" class="btn btn-dark">Cancel</a>
-                      <?php else: ?>
-                        <button type="submit" name="add_petani" class="btn btn-primary mr-2">Submit</button>
-                        <button type="reset" class="btn btn-dark">Cancel</button>
-                      <?php endif; ?>
-                    </form>
-                  </div>
-                </div>
-              </div>
+<div class="row">
+  <div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">
+          <?php 
+          if (isset($_GET['edit_petani'])) {
+              echo "Edit Data Petani";
+          } else {
+              echo "Tambah Data Petani";
+          }
+          ?>
+        </h4>
+        <p class="card-description"> Form data Petani Desa </p>
+        <form class="forms-sample" method="POST" action="">
+          <?php
+          // Jika mode edit petani, ambil data yang akan diedit
+          if (isset($_GET['edit_petani'])) {
+              $id_edit_petani = $_GET['edit_petani'];
+              $data_edit_petani = mysqli_query($con, "SELECT * FROM petani WHERE IDPetani='$id_edit_petani'");
+              $row_edit_petani = mysqli_fetch_array($data_edit_petani);
+              
+              echo "<input type='hidden' name='IDPetani' value='$row_edit_petani[IDPetani]'>";
+          }
+          ?>
+          
+          <div class="form-group">
+            <label for="nama_petani">Nama</label>
+            <input type="text" class="form-control" id="nama_petani" name="nama" placeholder="Nama lengkap"
+                   value="<?php echo isset($row_edit_petani) ? $row_edit_petani['nama'] : ''; ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="bentangan">Bentangan</label>
+            <input type="number" class="form-control" id="bentangan" name="bentangan" placeholder="Bentangan"
+                   value="<?php echo isset($row_edit_petani) ? $row_edit_petani['bentangan'] : ''; ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="produksi_mt">Produksi per MT</label>
+            <input type="number" class="form-control" id="produksi_mt" name="produksi_mt" placeholder="Produksi per MT"
+                   value="<?php echo isset($row_edit_petani) ? $row_edit_petani['produksi_mt'] : ''; ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="mt">MT</label>
+            <input type="number" class="form-control" id="mt" name="mt" placeholder="MT"
+                   value="<?php echo isset($row_edit_petani) ? $row_edit_petani['mt'] : ''; ?>" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="produksi_thn">Produksi per Tahun</label>
+            <input type="number" class="form-control" id="produksi_thn" name="produksi_thn" placeholder="Produksi per Tahun"
+                   value="<?php echo isset($row_edit_petani) ? $row_edit_petani['produksi_thn'] : ''; ?>" required>
+          </div>
+          
+          <?php if (isset($_GET['edit_petani'])): ?>
+            <button type="submit" name="edit_petani" class="btn btn-primary mr-2">Update</button>
+            <a href="basic_elements.php" class="btn btn-dark">Cancel</a>
+          <?php else: ?>
+            <button type="submit" name="add_petani" class="btn btn-primary mr-2">Submit</button>
+            <button type="reset" class="btn btn-dark">Cancel</button>
+          <?php endif; ?>
+        </form>
+      </div>
+    </div>
+  </div>
 
               <!-- Tabel Data Petani -->
               <div class="col-md-6 grid-margin stretch-card">
