@@ -52,6 +52,7 @@ include "call.php"
           <li><a href="page3.php">Batas Wilayah</a></li>
           <li><a href="page4.php">Pertumbuhan Penduduk</a></li>
           <li><a href="contact.php">Contact</a></li>
+          <li><a href="admin-page\template\index.php">Dashboard</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
