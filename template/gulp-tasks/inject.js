@@ -12,7 +12,7 @@ var merge = require('merge-stream');
 
 /* inject partials like sidebar and navbar */
 gulp.task('injectPartial', function () {
-    return gulp.src(["./pages/*/*.html", "./index.html"], {
+    return gulp.src(["./pages/*/*.php", "./index.php"], {
             base: "./"
         })
         .pipe(injectPartials())
@@ -52,15 +52,15 @@ gulp.task('injectAssets', function () {
 
 /*replace image path and linking after injection*/
 gulp.task('replacePath', function () {
-    var replacePath1 = gulp.src('./pages/**/*.html', {
+    var replacePath1 = gulp.src('./pages/**/*.php', {
             base: "./"
         })
         .pipe(replace('src="assets/images/', 'src="../../assets/images/'))
         .pipe(replace('href="pages/', 'href="../../pages/'))
         .pipe(replace('href="documentation"', 'href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html"'))
-        .pipe(replace('href="index.html"', 'href="../../index.html"'))
+        .pipe(replace('href="index.html"', 'href="../../index.php"'))
         .pipe(gulp.dest('.'));
-    var replacePath2 = gulp.src('./**/index.html', {
+    var replacePath2 = gulp.src('./**/index.php', {
             base: "./"
         })
         .pipe(replace('href="documentation"', 'href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html"'))
@@ -71,7 +71,7 @@ gulp.task('replacePath', function () {
 
 
 gulp.task('html-beautify', function () {
-    return gulp.src(['./**/*.html', '!node_modules/**/*.html'])
+    return gulp.src(['./**/*.html', '!node_modules/**/*.php'])
         .pipe(prettify({
             unformatted: ['pre', 'code', 'textarea']
         }))
