@@ -2,6 +2,7 @@
   <tr>
     <td>
       <a href="https://www.bootstrapdash.com/demo/corona-free/jquery/template/index.html" target="_blank"><img src="preview.jpg"></a>
+      <a href="https://rahulhidau.blogspot.com/2021/04/corona-free-dark-bootstrap-admin.html" target="_blank"><img src="preview.jpg"></a>
        <h3>Corona-free</h3>
     </td>
   </tr>
