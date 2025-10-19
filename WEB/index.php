@@ -41,8 +41,8 @@ include "call.php"
 
       <a href="index.php" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">gACOR</h1>
+        <img src="dummies/logo_konsel.jpg" alt="">
+        <h1 class="sitename">Desa Bungi</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -70,6 +70,7 @@ include "call.php"
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-lg-10 hero-content" data-aos="fade-up" data-aos-delay="100">
               <h1>Website Desa Bungi</h1>
+              <h2>Website Desa Bungi</h2>
             </div>
           </div>
         </div>
@@ -232,8 +233,8 @@ include "call.php"
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Squad Kelompok Web</h2>
+        <p>Through the Fire and the Flames</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -272,7 +273,20 @@ include "call.php"
                   <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Jessica Martinez</h5>
+                  <h5>Kahar Munajat</h5>
+                  <span>E1E124061</span>
+                </div>
+              </div>
+            </div><!-- End Testimonial Slide -->
+
+            <!-- Testimonial Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
+                </div>
+                <div class="testimonial-footer">
+                  <h5>Albyansyah Porosi</h5>
                   <span>UX Designer</span>
                 </div>
               </div>
@@ -285,7 +299,7 @@ include "call.php"
                   <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Jessica Martinez</h5>
+                  <h5>Muh. Dirga</h5>
                   <span>UX Designer</span>
                 </div>
               </div>
@@ -298,7 +312,7 @@ include "call.php"
                   <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Jessica Martinez</h5>
+                  <h5>Muh. Raihan Saladin</h5>
                   <span>UX Designer</span>
                 </div>
               </div>
@@ -311,7 +325,7 @@ include "call.php"
                   <img src="assets/img/person/person-f-12.webp" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Jessica Martinez</h5>
+                  <h5>Gilang syah fitra R</h5>
                   <span>UX Designer</span>
                 </div>
               </div>
