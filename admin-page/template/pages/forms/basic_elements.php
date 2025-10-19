@@ -615,7 +615,7 @@ if (isset($_GET['delete_petani'])) {
                           $data_edit = mysqli_query($con, "SELECT * FROM petani WHERE IDPetani='$id_edit'");
                           $row_edit = mysqli_fetch_array($data_edit);
                           
-                          echo "<input type='hidden' name='id_petani' value='$row_edit[IDPetani]'>";
+                          echo "<input type='hidden' name='IDPetani' value='$row_edit[IDPetani]'>";
                       }
                       ?>
                       
@@ -627,24 +627,24 @@ if (isset($_GET['delete_petani'])) {
                       
                       <div class="form-group">
                         <label for="bentangan">Bentangan</label>
-                        <input type="bentangan" class="form-control" id="bentangan" name="bentangan" placeholder="Bentangan"
+                        <input type="number" class="form-control" id="bentangan" name="bentangan" placeholder="Bentangan"
                                value="<?php echo isset($row_edit) ? $row_edit['bentangan'] : ''; ?>" required>
                       </div>
                       
                       <div class="form-group">
                         <label for="produksi_mt">Produksi_mt</label>
-                        <input type="text" class="form-control" id="produksi_mt" name="produksi_mt" placeholder="produksi_mt"
+                        <input type="number" class="form-control" id="produksi_mt" name="produksi_mt" placeholder="produksi_mt"
                                value="<?php echo isset($row_edit) ? $row_edit['produksi_mt'] : ''; ?>">
                       </div>
                       
                       <div class="form-group">
                         <label for="mt">mt</label>
-                        <textarea class="form-control" id="mt" name="mt" rows="2" placeholder="mt" required><?php echo isset($row_edit) ? $row_edit['mt'] : ''; ?></textarea>
+                        <input type="number" class="form-control" id="mt" name="mt" placeholder="MT" value="<?php echo isset($row_edit) ? $row_edit['mt'] : ''; ?>" required>
                       </div>
                       
                       <div class="form-group">
                         <label for="produksi_thn">Produksi_thn</label>
-                        <textarea class="form-control" id="produksi_thn" name="produksi_thn" rows="4" placeholder="Produksi_thn" required><?php echo isset($row_edit) ? $row_edit['produksi_thn'] : ''; ?></textarea>
+                        <input type="number" class="form-control" id="produksi_thn" name="produksi_thn" placeholder="Produksi per Tahun" value="<?php echo isset($row_edit) ? $row_edit['produksi_thn'] : ''; ?>" required>
                       </div>
                       
                       <?php if (isset($_GET['edit_petani'])): ?>
