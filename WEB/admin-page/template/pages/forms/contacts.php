@@ -2,6 +2,19 @@
 // Koneksi database (selaras dengan basic_elements.php)
 $con = mysqli_connect("localhost", "root", "", "desa_bungi");
 
+mysqli_query($con, "
+CREATE TABLE IF NOT EXISTS `contact_messages` (
+    `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(150) NOT NULL,
+    `email` VARCHAR(190) NOT NULL,
+    `subject` VARCHAR(190) NOT NULL,
+    `phone` VARCHAR(60) NULL,
+    `message` TEXT NOT NULL,
+    `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+");
+
 // Tabel yang digunakan oleh contact.php
 $TABLE = 'contact_messages';
 

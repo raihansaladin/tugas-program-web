@@ -113,7 +113,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex flex-row justify-content-between">
-                      <h4 class="card-title mb-1">Informasi Desa</h4>
+                      <h4 class="card-title mb-1">Uraian Desa</h4>
                     </div>
                     <div class="row">
                       <div class="col-12">

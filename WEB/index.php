@@ -312,8 +312,8 @@ include "call.php"
                   <img src="profiles/p3.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Muh. Raihan Saladin</h5>
-                  <span>E1E1240</span>
+                  <h5>Ld. M. Raihan Saladin</h5>
+                  <span>E1E124063</span>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->
@@ -325,7 +325,7 @@ include "call.php"
                   <img src="profiles/p2.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Gilang syah fitra R</h5>
+                  <h5>Gilang Syah Fitra R.</h5>
                   <span>E1E1240</span>
                 </div>
               </div>
