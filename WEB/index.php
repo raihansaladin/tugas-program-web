@@ -299,7 +299,7 @@ include "call.php"
                   <img src="profiles/p1.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Muh. Dirga</h5>
+                  <h5>La Ode Muhammad Dirga</h5>
                   <span>E1E124007</span>
                 </div>
               </div>
@@ -312,7 +312,7 @@ include "call.php"
                   <img src="profiles/p3.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Ld. M. Raihan Saladin</h5>
+                  <h5>La Ode Muammar Raihan Saladin</h5>
                   <span>E1E124063</span>
                 </div>
               </div>
@@ -325,7 +325,7 @@ include "call.php"
                   <img src="profiles/p2.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Gilang Syah Fitrah R.</h5>
+                  <h5>Gilang Syah Fitrah Ramadhan</h5>
                   <span>E1E124037</span>
                 </div>
               </div>
