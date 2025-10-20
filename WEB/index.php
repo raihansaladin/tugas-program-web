@@ -184,7 +184,7 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="/portfolio/k1.jpg">
+                  <img src="portfolio/k1.jpg">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Pelatihan Pembuatan nuget rumput laut</h5>
@@ -196,7 +196,7 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="/portfolio/k2.jpg">
+                  <img src="portfolio/k2.jpg">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Panen Rumput Laut</h5>
@@ -207,7 +207,7 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="/portfolio/k3.jpg">
+                  <img src="portfolio/k3.jpg">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Penyiapan bibit rumput laut</h5>
@@ -218,7 +218,7 @@ include "call.php"
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="200">
                 <div class="testimonial-header">
-                  <img src="/portfolio/k4.jpg">
+                  <img src="portfolio/k4.jpg">
                 </div>
                 <div class="testimonial-footer">
                   <h5>Pengeringan Rumput laut</h5>
