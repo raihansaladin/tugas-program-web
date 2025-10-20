@@ -325,8 +325,8 @@ include "call.php"
                   <img src="profiles/p2.jpg" alt="Client" class="img-fluid" loading="lazy">
                 </div>
                 <div class="testimonial-footer">
-                  <h5>Gilang Syah Fitra R.</h5>
-                  <span>E1E1240</span>
+                  <h5>Gilang Syah Fitrah R.</h5>
+                  <span>E1E124037</span>
                 </div>
               </div>
             </div><!-- End Testimonial Slide -->
